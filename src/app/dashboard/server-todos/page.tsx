@@ -15,11 +15,12 @@ export default async function RestTodosPage() {
   })
 
   return (
-    <div>
-      <div className="w-full px-3 mx-5 mb-5">
+    <>
+      <span className="text-3xl">Server Actions</span>
+      <div className="w-full px-3 mx-5 my-5">
         <NewTodo />
       </div>
       <TodosGrid todos={todos} />
-    </div>
+    </>
   );
 }
